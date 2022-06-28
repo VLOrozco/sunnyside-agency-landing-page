@@ -1,0 +1,55 @@
+/* 
+font-family: 'Barlow', sans-serif;
+font-family: 'Fraunces', serif;
+ */
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+/* ========================================================================= */
+/* TABLE OF CONTENTS
+1. GLOBAL
+2. TYPOGRAPHY
+3. LAYOUT
+4. IMAGES
+5. MEDIA QUERY | MOBILE VIEW 375px
+*/
+/* DOM SECTIONS
+NAV | LOGO, NAVBAR (TOGGLE)
+MAIN | HERO IMAGE
+SECTION | PRODUCTS GRID
+SECTION | CLIENT TESTIMONIALS
+SPAN | IMAGE GRID
+FOOTER | LOGO, LINKS, ICONS
+ */
+/* ========================================================================= */
+/* 1. GLOBAL */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  position: relative;
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -0.1285714358px;
+  text-align: left;
+}
+
+/* ========================================================================= */
+/* 2. TYPOGRAPHY */
+/* ========================================================================= */
+/* 3. LAYOUT */
+/* ========================================================================= */
+/* 4. IMAGES */
+#hero-img {
+  background-image: src("images/desktop/image-header.jpg");
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  position: absolute;
+  height: 800px;
+  width: 100%;
+}
+
+/* ========================================================================= */
+/* 5. MEDIA QUERY | MOBILE VIEW 375px *//*# sourceMappingURL=style.css.map */
