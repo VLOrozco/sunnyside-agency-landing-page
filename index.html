@@ -8,61 +8,166 @@
   
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.scss">
 </head>
 <body>
-  About
-  Services
-  Projects
-  Contact
 
-  We are creatives
+<!-- HERO -->
+<div id="hero">
+  <!-- HERO BACKGROUND-IMAGE -->
+  <img src="images/icon-arrow-down.svg" alt="" id="hero-img">
 
-  Transform your brand
+  <!-- LOGO & NAV-->
+  <div id="logo-nav">
 
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
+    <!-- LOGO -->
+    <img src="/images/logo.svg" alt="sunnyside logo" id="logo">
 
-  Learn more
+    <!-- NAV + MENU HAMBURGER ICON -->
+    <div id="navigation-menu">
+      <!-- ICON -->
+      <img id="logo" src="/images/icon-hamburger.svg" alt="menu icon">
 
-  Stand out to the right audience
+      <!-- NAVBAR -->
+      <nav id="navbar">
+        <ul class="navbar">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <button id="contact" href="#">Contact</button>
+        </ul>
+      </nav>
 
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+    </div>
+  </div>
 
-  Learn more
+  <div id="hero">
+    <h1 class="hero-txt">We are creatives</h1>
+    <img src="/images/icon-arrow-down.svg" alt="white arrow pointing down" id="down-arrow">
+  </div>
 
-  Graphic design
-  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+</div>
 
-  Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
 
-  Client testimonials
 
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-  Emily R.
-  Marketing Director
+<!-- SECTION | GRID -->
+<section id="products-grid" class="products">
 
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-  Thomas S.
-  Chief Operating Officer
+  <div class="one">
+    <h2 class="product-title">Transform your brand</h2>
+    <p class="product-description">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+    <a href="#" id="product-link link1">Learn more</a>
+  </div>
 
-  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-  Jennie F.
-  Business Owner
+  <div id="img1" class="two img-transform"></div>
 
-  About
-  Services
-  Projects
-  Contact
+  <div id="img2" class="three img-stand-out"></div>
+
+  <div id="img3" class="four img-graphic-design">
+    <h2 class="product-title">Stand out to the right audience</h2>
+    <p class="product-description">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+    <a href="#" id="product-link link2">Learn more</a>
+  </div>
+
+  <div id="img4" class="five img-photography">
+    <h3 class="product-title2">Graphic design</h3>
+    <p class="product-description2">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+  </div>
+
+  <div class="six">
+    <h3 class="product-title2">Photography</h3>
+    <p class="product-description2">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+  </div>
+
+</section>
+
+
+
+<!-- SECTION | CLIENT TESTIMONIALS -->
+<section id="client-testimonials">
+  <div id="testimonials-container">
+
+  <!-- TITLE -->
+  <h4 class="testimonials-title">Client Testimonials</h4>
+
+  <!-- CLIENT'S TESTIMONIES -->
+  <div id="client-cards">
+
+    <!-- CLIENT CARD 1 -->
+    <div class="client-card">
+      <div class="client-photo photo1"></div>
+      <p class="testimony">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+      <h4 class="client-name">Emily R.</h4>
+      <h5 class="client-position">Marketing Director</h5>
+    </div>
+
+    <!-- CLIENT CARD 2 -->
+    <div class="client-card">
+      <div class="client-photo photo2"></div>
+      <p class="testimony">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+      <h4 class="client-name">Thomas S.</h4>
+      <h5 class="client-position">Chief Operating Officer</h5>
+    </div>
+
+    <!-- CLIENT CARD 3 -->
+    <div class="client-card">
+      <div class="client-photo photo3"></div>
+      <p class="testimony">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+      <h4 class="client-name">Jennie F.</h4>
+      <h5 class="client-position">Business Owner</h5>
+    </div>
+
+  </div>
+
+  </div>
+</section>
+
+
+
+<!-- SECTION | GRID : IMG-CONTAINER -->
+
+<span id="img-grid">
+  <div id="milk"></div>
+  <div id="orange"></div>
+  <div id="ice-cream-cone"></div>
+  <div id="sugar-cubes"></div>
+</span>
+
+
+
+<!-- FOOTER -->
+<footer id="footer">
+
+  <div class="ft-container">
+
+    <!-- LOGO -->
+    <img src="/images/logo.svg" alt="sunnyside logo" id="logo2">
+
+    <!-- FOOTER NAVBAR -->
+    <nav id="ft-navbar">
+      <ul class="ft-navbar">
+        <li class="mini-ft-nav"><a href="#" class="mini-ft-link">About</a></li>
+        <li class="mini-ft-nav"><a href="#" class="mini-ft-link">Services</a></li>
+        <li class="mini-ft-nav"><a href="#" class="mini-ft-link">Projects</a></li>
+      </ul>
+    </nav>
+
+    <!-- FOOTER ICONS -->
+    <div id="icon-container">
+      <div id="facebook"></div>
+      <div id="instagram"></div>
+      <div id="twitter"></div>
+      <div id="pinterest"></div>
+    </div>
+
+  </div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Veronica L. Orozco</a>.
   </div>
+
+</footer>
+
 </body>
 </html>
