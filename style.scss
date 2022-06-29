@@ -218,6 +218,12 @@ body {
         background-color: $white;
         cursor: pointer;
       }
+      button:hover, button:focus {
+        color: $white;
+        background-color: rgba(255, 255, 255, 0.25);
+        mix-blend-mode: normal;
+        border-radius: 28px;
+      }
     }
     .link1 {
       margin-left: 4px;
