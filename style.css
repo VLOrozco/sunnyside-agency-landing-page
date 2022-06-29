@@ -183,6 +183,48 @@ body {
   text-align: center;
 }
 
+/* SECTION | CLIENT TESTIMONIALS | TYPOGRAPHY */
+.testimonials-title {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 25px;
+  letter-spacing: 5px;
+  text-align: center;
+  color: rgb(167, 171, 174);
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+}
+
+.testimony {
+  color: rgb(90, 99, 108);
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.1285714358px;
+  text-align: center;
+}
+
+/* CLIENT TESTIMONIALS  | TYPOGRAPHY */
+.client-name {
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 22px;
+  letter-spacing: -0.1285714358px;
+  text-align: center;
+  color: vDarkDblue;
+}
+
+.client-position {
+  color: rgb(167, 171, 174);
+  font-family: "Barlow", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: -0.1000000015px;
+  text-align: center;
+}
+
 /* ========================================================================= */
 /* 3. LAYOUT */
 /* HERO | LAYOUT */
@@ -337,6 +379,83 @@ body {
   margin-bottom: 59px;
 }
 
+/* SECTION | CLIENT TESTIMONIALS | LAYOUT */
+#client-testimonials {
+  width: 100%;
+  height: 777px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 2 777px;
+}
+
+#testimonials-container {
+  height: 400px;
+  width: 1110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+
+.testimonials-title {
+  height: 25px;
+  width: 348px;
+  margin-bottom: 46px;
+}
+
+#client-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-card {
+  height: 350px;
+  width: 351px;
+}
+
+.client-card:nth-child(2) {
+  margin: 0 30px;
+}
+
+.testimony {
+  height: 96px;
+  width: 350px;
+}
+
+.client-info {
+  height: 56px;
+  width: 203px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 58px;
+  margin-bottom: 69px;
+  margin-left: 64px;
+}
+
+.client-name {
+  height: 22px;
+  width: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+.client-position {
+  height: 25px;
+  width: 203px;
+  margin: 0;
+  padding: 0;
+}
+
 /* ========================================================================= */
 /* 4. IMAGES */
 #hero {
@@ -385,6 +504,34 @@ body {
 
 .img-photography {
   background-image: url("/images/desktop/image-photography.jpg");
+}
+
+/* CLIENT TESTIMONIALS IMAGES */
+.client-photo {
+  position: relative;
+  height: 72px;
+  width: 72px;
+  border-radius: 50%;
+  margin-left: 137px;
+  margin-bottom: 58px;
+}
+
+.photo1, .photo2, .photo3 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.photo1 {
+  background-image: url("images/image-emily.jpg");
+}
+
+.photo2 {
+  background-image: url("images/image-thomas.jpg");
+}
+
+.photo3 {
+  background-image: url("images/image-jennie.jpg");
 }
 
 /* ========================================================================= */

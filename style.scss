@@ -254,6 +254,40 @@ body {
 
 }
 
+/* SECTION | CLIENT TESTIMONIALS | TYPOGRAPHY */
+
+.testimonials-title {
+  @include heading4;
+  color: $grayishBlue;
+  font-family: $Fraunces;
+  text-transform: uppercase;
+}
+
+.testimony {
+  color: $vDarkGblue;
+  font-family: $Barlow;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.12857143580913544px;
+  text-align: center;
+}
+
+/* CLIENT TESTIMONIALS  | TYPOGRAPHY */
+.client-name {
+  @include heading5;
+  color: vDarkDblue;
+}
+.client-position {
+  color: $grayishBlue;
+  font-family: $Barlow;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: center;
+}
+
 /* ========================================================================= */
 /* 3. LAYOUT */
 /* HERO | LAYOUT */
@@ -280,7 +314,6 @@ body {
     display: flex;
     align-items: center;
     .navbar {
-      // background-color: pink;
       @include reset;
       @include flexboxR;
       justify-content: flex-start;
@@ -288,7 +321,6 @@ body {
       margin-left: 67px;
       // LINK CONTAINER
       li {
-        // background-color: yellow;
         .link {
           text-decoration: none;
           font-family: $Barlow;
@@ -368,7 +400,6 @@ body {
 }
 
 #product-link1, #product-link2 {
-  // background-color: yellow;
   position: relative;
   height: 25px;
   width: 137px;
@@ -398,6 +429,64 @@ body {
   }
 }
 
+/* SECTION | CLIENT TESTIMONIALS | LAYOUT */
+#client-testimonials {
+  width: 100%;
+  height: 777px;
+  @include reset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 2 777px;
+}
+#testimonials-container {
+  height: 400px;
+  width: 1110px;
+  @include flexboxC;
+  margin-top: 0;
+}
+  .testimonials-title {
+    height: 25px;
+    width: 348px;
+    margin-bottom: 46px;
+  }
+// CARD CONTAINER
+#client-cards {
+  @include flexboxR;
+}
+// CARDS
+.client-card {
+  height: 350px;
+  width: 351px;
+}
+  .client-card:nth-child(2) {
+    margin: 0 30px;
+  }
+
+.testimony {
+  height: 96px;
+  width: 350px;
+}
+
+.client-info {
+  height: 56px;
+  width: 203px;
+  @include reset;
+  @include flexboxC;
+  margin-top: 58px;
+  margin-bottom: 69px;
+  margin-left: 64px;
+}
+  .client-name {
+    height: 22px;
+    width: 100px;
+    @include reset;
+  }
+  .client-position {
+    height: 25px;
+    width: 203px;
+    @include reset;
+  }
 
 /* ========================================================================= */
 /* 4. IMAGES */
@@ -438,6 +527,30 @@ body {
 }
 .img-photography {
   background-image: url('/images/desktop/image-photography.jpg');
+}
+
+/* CLIENT TESTIMONIALS IMAGES */
+.client-photo {
+  position: relative;
+  height: 72px;
+  width: 72px;
+  border-radius: 50%;
+  margin-left: 137px;
+  margin-bottom: 58px;
+}
+.photo1, .photo2, .photo3 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.photo1 {
+  background-image: url('images/image-emily.jpg');
+}
+.photo2 {
+  background-image: url('images/image-thomas.jpg');
+}
+.photo3 {
+  background-image: url('images/image-jennie.jpg');
 }
 
 /* ========================================================================= */
