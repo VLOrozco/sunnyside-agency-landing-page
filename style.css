@@ -115,6 +115,7 @@ body {
   width: 545px;
   display: flex;
   align-items: center;
+  /* LINKS | LAYOUT:margins */
 }
 #logo-nav #navbar .navbar {
   margin: 0;
@@ -176,15 +177,7 @@ body {
 }
 
 .hero-title {
-  font-size: 56px;
-  font-weight: 900;
-  line-height: 69px;
-  letter-spacing: 8.75px;
-  text-align: center;
-  color: hsl(0deg, 0%, 100%);
   margin-left: 9px;
-  word-spacing: 5px;
-  letter-spacing: 10px;
   margin-top: 67px;
   margin-bottom: 95px;
 }

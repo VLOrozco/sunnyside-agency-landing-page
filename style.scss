@@ -152,7 +152,6 @@ body {
   letter-spacing: 10px;
 }
 
-
 /* ========================================================================= */
 /* 3. LAYOUT */
 /* HERO | LAYOUT */
@@ -225,6 +224,7 @@ body {
         border-radius: 28px;
       }
     }
+    /* LINKS | LAYOUT:margins */
     .link1 {
       margin-left: 4px;
     }
@@ -241,16 +241,11 @@ body {
   }
 }
 
-
 #hero-txt {
   @include flexboxC;
 }
 .hero-title {
-  @include heading1;
-  color: $white;
   margin-left: 9px;
-  word-spacing: 5px;
-  letter-spacing: 10px;
   margin-top: 67px;
   margin-bottom: 95px;
 }
