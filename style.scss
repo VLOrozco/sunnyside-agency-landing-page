@@ -488,6 +488,17 @@ body {
     @include reset;
   }
 
+/* SECTION | GRID : IMG-CONTAINER | LAYOUT */
+#img-grid {
+  background-color: yellow;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  gap: 0;
+  height: 447px;
+  width: 100%;
+}
+
 /* ========================================================================= */
 /* 4. IMAGES */
 #hero {
@@ -544,14 +555,36 @@ body {
   background-size: contain;
 }
 .photo1 {
-  background-image: url('images/image-emily.jpg');
+  background-image: url('/images/image-emily.jpg');
 }
 .photo2 {
-  background-image: url('images/image-thomas.jpg');
+  background-image: url('/images/image-thomas.jpg');
 }
 .photo3 {
-  background-image: url('images/image-jennie.jpg');
+  background-image: url('/images/image-jennie.jpg');
 }
+
+/* SECTION | GRID : IMG-CONTAINER | IMAGES */
+#milk, #orange, #ice-cream-cone, #sugar-cubes {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#milk {
+  background-image: url('/images/desktop/image-gallery-milkbottles.jpg');
+}
+#orange {
+  background-image: url('/images/desktop/image-gallery-orange.jpg');
+}
+#ice-cream-cone {
+  background-image: url('/images/desktop/image-gallery-cone.jpg');
+}
+#sugar-cubes {
+  background-image: url('/images/desktop/image-gallery-sugarcubes.jpg');
+}
+
 
 /* ========================================================================= */
 /* 5. MEDIA QUERY | MOBILE VIEW 375px */
