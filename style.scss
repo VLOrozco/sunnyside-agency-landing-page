@@ -316,6 +316,10 @@ body {
 /* ========================================================================= */
 /* 3. LAYOUT */
 /* HERO | LAYOUT */
+/* NAV HAMBURGER MENU | LAYOUT */
+#menu-icon, .triangle {
+    display: none;
+  }
 
 #logo-nav {
   @include flexboxR;
@@ -326,41 +330,37 @@ body {
     height: 33px;
     width: 170px;
   }
-  /* NAV HAMBURGER MENU | LAYOUT */
-  #navigation-menu {
-    #menu-icon {
-      display: none;
-    }
-  }
   /* NAVBAR | LAYOUT */
   #navbar {
+    display: block;
     height: 56px;
     width: 545px;
     display: flex;
     align-items: center;
-    .navbar {
-      @include reset;
-      @include flexboxR;
-      justify-content: flex-start;
-      list-style: none;
-      margin-left: 67px;
-      /* CONTACT BUTTON | LAYOUT */
-      button {
-        height: 56px;
-        width: 140px;
-        border-radius: 28px;
-        border: none;
-        padding: 16px 30px 15px 32px;
-        background-color: $white;
-      }
-      // CONTACT BTN | ACTIVE STATE
-      button:hover, button:focus {
-        color: $white;
-        background-color: rgba(255, 255, 255, 0.25);
-        mix-blend-mode: normal;
-        border-radius: 28px;
-      }
+  }
+  .navbar {
+    @include reset;
+    @include flexboxR;
+    justify-content: flex-start;
+    list-style: none;
+    margin-left: 67px;
+    /* CONTACT BUTTON | LAYOUT */
+    button {
+      height: 56px;
+      width: 140px;
+      border-radius: 28px;
+      border: none;
+      padding: 16px 30px 15px 32px;
+      background-color: $white;
     }
+    // CONTACT BTN | ACTIVE STATE
+    button:hover, button:focus {
+      color: $white;
+      background-color: rgba(255, 255, 255, 0.25);
+      mix-blend-mode: normal;
+      border-radius: 28px;
+    }
+  }
     /* LINK# | LAYOUT:margins */
     .link1 {
       margin-left: 4px;
@@ -376,7 +376,6 @@ body {
       margin-left: 2.9rem;
     }
   }
-}
 
 #hero-txt {
   @include flexboxC;
@@ -661,16 +660,419 @@ body {
 /* 5. MEDIA QUERY | MOBILE VIEW at 375px */
 
 @media screen and (max-width: 900px) {
-  #hero {
-    background-image: url('/images/mobile/image-header.jpg');/* The image used */
-    height: 538px;/* You must set a specified height */
-    width: 100%; 
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+  body {
+    overflow-x: hidden;
   }
+  /* IMAGES */
+  #hero {
+    background-image: url('/images/mobile/image-header.jpg');
+    height: 536px;
+  }
+
+  /* SECTION | GRID IMAGES */
+  #img3, #img4 {
+    height: 600px;
+    width: 375px;
+    background-position: top center;
+    background-size: cover;
+  }
+  .img-transform {
+    background-image: url('/images/mobile/image-transform.jpg');
+  }
+  .img-stand-out {
+    background-image: url('/images/mobile/image-stand-out.jpg');
+  }
+  .img-graphic-design {
+    background-image: url('/images/mobile/image-graphic-design.jpg');
+  }
+  .img-photography {
+    background-image: url('/images/mobile/image-photography.jpg');
+  }
+
+  /* SECTION | GRID : IMG-CONTAINER | IMAGES */
+  #milk {
+    background-image: url('/images/mobile/image-gallery-milkbottles.jpg');
+  }
+  #orange {
+    background-image: url('/images/mobile/image-gallery-orange.jpg');
+  }
+  #ice-cream-cone {
+    background-image: url('/images/mobile/image-gallery-cone.jpg');
+  }
+  #sugar-cubes {
+    background-image: url('/images/mobile/image-gallery-sugar-cubes.jpg');
+  }
+
+  /* TYPOGRAPHY | MEDIA QUERY */
+  /* NAV LINKS | TYPOGRAPHY */
+  .link {
+    text-decoration: none;
+    font-size: 20px;
+    color: $darkGblue;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: -0.14px;
+  }
+  /* CONTACT BUTTON | TYPOGRAPHY */
+  .navbar button {
+    letter-spacing: -0.11px;
+  }
+
+  /* HERO | TYPOGRAPHY */
+  .hero-title {
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: 6.25px;
+    text-align: center;
+  }
+
+  /* SECTION | GRID | TYPOGRAPHY */
+  .product-title {
+    color: $vDarkDblue;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 39px;
+    letter-spacing: -0.22857142984867096px;
+    text-align: center;
+  }
+
+  /* "LEARN MORE" LINK + ::AFTER PSEUDO CLASS ATTRIBUTES */
+  #product-link1::after {
+    top: 11px;
+    left: -10px;
+  }
+  #product-link2::after {
+    top: 11px;
+    left: -10px;
+  }
+  .learnMore1, .learnMore2 {
+    text-align: center;
+  }
+
+/* SECTION | CLIENT TESTIMONIALS | TYPOGRAPHY */
+
+.testimonials-title {
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 20px;
+  letter-spacing: 4px;
+  text-align: center;
 }
 
-html {
-  scroll-behavior: smooth;
+/* LAYOUT | MEDIA QUERY */
+
+/* HERO | LAYOUT */
+#logo-nav {
+  margin: 0;
+  /* LOGO | LAYOUT */
+  #logo {
+    height: 24px;
+    width: 123.64px;
+    margin-top: 30px;
+    margin-left: 24px;
+  }
+  /* NAVBAR | LAYOUT */
+  #navbar {
+    height: 56px;
+    width: 375px;
+  }
+
+  #triangle {
+      position: relative;
+      top: 63px;
+      right: -156px;
+      width: 0;
+      height: 0;
+      border-bottom: 24px solid white;
+      border-left: 24px solid transparent;
+      z-index: 100;
+    }
+  .navbar {
+    @include flexboxC;
+    background-color: $white;
+    position: relative;
+    left: -173px;
+    top: 213px;
+    height: 305px;
+    width: 329px;
+    margin-left: 0;
+    margin-top: 28px;
+    li {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .link {
+        width: 329px;
+        margin-left: 0;
+        margin: 16px;
+      }
+      .link1 {
+        margin-top: 5px;
+      }
+      .link2 {
+        margin-top: 20px;
+        margin-bottom: 14px;
+      }
+      .link3 {
+        margin-top: 18px;
+        margin-bottom: 12px;
+      }
+    }
+    /* CONTACT BUTTON | LAYOUT */
+    button {
+      background-color: $yellow;
+      margin-top: 20px;
+      margin-left: -5px;
+    }
+    button:hover, button:focus {
+      color: $white;
+      background-color: $softRed;
+    }
+  }
+  #navigation-menu {
+    display: none;
+  }
+  // #navigation-menu:active {
+  //   display: block;
+  // }
+  /* NAV HAMBURGER MENU | LAYOUT */
+  .menu-icon {
+    right: -180px;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  #menu-icon {
+    display: block;
+    position: relative;
+    right: 25px;
+    top: 15px;
+    cursor: pointer;
+    opacity: 1;
+  }
+  /* NAV HAMBURGER MENU | LAYOUT | when 
+  #navigation-menu display:block */
+  // .menu-icon {
+  //   right: -180px;
+  //   mix-blend-mode: normal;
+  //   opacity: 0.5;
+  // }
+}
+
+    /* ===================== */
+
+  #hero-txt {
+    @include flexboxC;
+  }
+  .hero-title {
+    margin-left: 9px;
+    margin-top: 88px;
+    margin-bottom: 95px;
+  }
+  #down-arrow {
+    position: relative;
+    top: -47px;
+  }
+
+  /* SECTION | GRID | LAYOUT */
+  #products-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    height: auto;
+    width: 100vw;
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four"
+      "five"
+      "six";
+  }
+  .one {
+    grid-area: two;
+  }
+  .two {
+    grid-area: one;
+  }
+  .three {
+    grid-area: three;
+  }
+  .four {
+    grid-area: four;
+  }
+  .five {
+    grid-area: five;
+  }
+  .six {
+    grid-area: six;
+  }
+
+  .one, .four {
+    @include reset;
+    @include flexboxC;
+    height: 437px;
+    width: 375px;
+  }
+    #transform1, #stand-out1 {  
+    height: 320px;
+    width: 327px;
+    margin: -14px 24px 64px 24px;
+  }
+
+  .product-title {
+    font-family: $Fraunces;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 39px;
+    letter-spacing: -0.22857142984867096px;
+    text-align: center;
+
+    height: 78px;
+    width: 325px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+  }
+  .product-description {
+    height: 150px;
+    width: 327px;    text-align: center;
+  }
+
+    #product-link1 {
+      margin-top: 0;
+    }
+    #product-link1::after {
+      content: '';
+      background: rgba(250, 212, 0, 0.25);
+      height: 10px;
+      width: 137px;
+      top: 14px;
+      left: -2px;
+    }
+    #product-link2::after {
+      background: rgba(254, 120, 103, 0.25);
+      height: 10px;
+      width: 137px;
+      top: 12px;
+      left: -10px;
+    }
+    .img-transform, .img-stand-out {
+      height: 312px !important;
+      @include reset;
+    }
+    .img-stand-out {
+      background-position: top center;
+      background-size: cover;
+    }
+
+  .graphic-design-txt, 
+  .photography-txt {
+    width: 327px;
+    margin: 398px 24px 55px 24px;
+    .product-title2 {
+      margin-bottom: 27px;
+    }
+    .product-description2 {
+      margin-bottom: 0;
+    }
+  }
+
+  /* SECTION | CLIENT TESTIMONIALS | LAYOUT */
+  #client-testimonials {
+    width: 375px;
+    height: auto;
+    @include reset;
+  }
+  #testimonials-container {
+    height: 1200px;
+    width: 327px;
+    @include reset;
+    margin-left: -18px;
+    margin-top: -35px;
+  }
+    .testimonials-title {
+      height: 20px;
+      width: 279px;
+      margin-top: 64px;
+      margin-bottom: 58px;
+      margin-left: 0;
+    }
+  // CARD CONTAINER
+  #client-cards {
+    @include flexboxC;
+  }
+  // CARDS
+  .client-card {
+    height: 288px;
+    width: 327px;
+  }
+    .client-card:nth-child(2) {
+      margin: 64px 0;
+    }
+
+  .testimony {
+    width: 327px;
+    margin-top: -32px;
+    margin-left: 0;
+  }
+
+  .client-info {
+    margin-top: 25px;
+    margin-left: 64px;
+  }
+  .client-position{ margin-top: 8px;
+  }
+
+
+  /* SECTION | GRID : IMG-CONTAINER | LAYOUT */
+  #img-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    height: 375px;
+    width: 375px;
+    margin-top: 86px;
+  }
+
+  /* FOOTER | LAYOUT */
+
+  .ft-container {
+    @include reset;
+    @include flexboxC;
+    width: 297px;
+    margin-top: -33px;
+  }
+  #logo2 {
+    width: 80%;
+    margin-top: -60px;
+    margin-bottom: 37px;
+    margin-left: 52px;
+  }
+
+  /* FOOTER NAVBAR | LAYOUT */
+  #ft-navbar {
+    margin-top: -39px;
+    .ft-navbar{
+      width: 300px;
+      @include flexboxR;
+      justify-content: space-between;
+      margin-left: -36px;
+    }
+  }
+  .margin {
+    margin-left: -65px;
+  }
+
+  /* FOOTER ICONS */
+  #icon-container {
+    position: relative;
+    top: 65px;
+    display: flex;
+    flex-direction: row;justify-content: space-between;
+    width: 164px;
+    height: 20px;
+  }
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
 }
