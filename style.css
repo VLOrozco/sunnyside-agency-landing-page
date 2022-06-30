@@ -61,6 +61,7 @@ body {
   line-height: 25px;
   letter-spacing: -0.1285714358px;
   text-align: left;
+  cursor: pointer;
 }
 
 /* CONTACT BUTTON | TYPOGRAPHY */
@@ -72,6 +73,7 @@ body {
   line-height: 25px;
   letter-spacing: -0.1071428582px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 /* HERO | TYPOGRAPHY */
@@ -225,6 +227,25 @@ body {
   text-align: center;
 }
 
+/* FOOTER NAVBAR | TYPOGRAPHY */
+.mini-ft-nav {
+  list-style: none;
+}
+.mini-ft-nav .mini-ft-link {
+  text-decoration: none;
+  color: rgb(69, 141, 126);
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: -0.1285714358px;
+  text-align: center;
+  cursor: pointer;
+}
+.mini-ft-nav .mini-ft-link:hover, .mini-ft-nav .mini-ft-link:focus {
+  color: rgb(255, 255, 255);
+}
+
 /* ========================================================================= */
 /* 3. LAYOUT */
 /* HERO | LAYOUT */
@@ -265,17 +286,6 @@ body {
   margin-left: 67px;
   /* CONTACT BUTTON | LAYOUT */
 }
-#logo-nav #navbar .navbar li .link {
-  text-decoration: none;
-  font-family: "Barlow", sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  color: rgb(255, 255, 255);
-  line-height: 25px;
-  letter-spacing: -0.1285714358px;
-  text-align: left;
-  cursor: pointer;
-}
 #logo-nav #navbar .navbar button {
   height: 56px;
   width: 140px;
@@ -283,7 +293,6 @@ body {
   border: none;
   padding: 16px 30px 15px 32px;
   background-color: rgb(255, 255, 255);
-  cursor: pointer;
 }
 #logo-nav #navbar .navbar button:hover, #logo-nav #navbar .navbar button:focus {
   color: rgb(255, 255, 255);
@@ -324,7 +333,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
   height: auto;
-  width: 100%;
+  width: 1440px;
 }
 
 .one, .four {
@@ -458,13 +467,73 @@ body {
 
 /* SECTION | GRID : IMG-CONTAINER | LAYOUT */
 #img-grid {
-  background-color: yellow;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
   gap: 0;
   height: 447px;
+  width: 1440px;
+  margin-bottom: -3px;
+}
+
+/* FOOTER | LAYOUT */
+#footer {
+  margin: 0;
+  padding: 0;
   width: 100%;
+  background-color: rgb(144, 212, 198);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+}
+
+.ft-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 206px;
+  width: 300px;
+  margin: -15px 570px 72px 570px;
+}
+
+#logo2 {
+  width: 80%;
+  margin-top: 18px;
+  margin-bottom: 40px;
+  margin-left: 52px;
+}
+
+/* FOOTER NAVBAR | LAYOUT */
+#ft-navbar {
+  margin-top: -31px;
+}
+#ft-navbar .ft-navbar {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: -36px;
+}
+
+/* FOOTER ICONS */
+#icon-container {
+  position: relative;
+  top: 65px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 164px;
+  height: 20px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
 }
 
 /* ========================================================================= */
@@ -568,6 +637,17 @@ body {
 
 #sugar-cubes {
   background-image: url("/images/desktop/image-gallery-sugarcubes.jpg");
+}
+
+/* FOOTER ICONS */
+.icon {
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+}
+
+.icon:hover, .icon:active, .icon:focus {
+  filter: brightness(0) invert(1);
 }
 
 /* ========================================================================= */

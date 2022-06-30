@@ -143,6 +143,7 @@ body {
   line-height: 25px;
   letter-spacing: -0.12857143580913544px;
   text-align: left;
+  cursor: pointer;
 }
 /* CONTACT BUTTON | TYPOGRAPHY */
 .navbar button {
@@ -153,6 +154,7 @@ body {
   line-height: 25px;
   letter-spacing: -0.1071428582072258px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 /* HERO | TYPOGRAPHY */
@@ -288,6 +290,27 @@ body {
   text-align: center;
 }
 
+/* FOOTER NAVBAR | TYPOGRAPHY */   
+.mini-ft-nav {
+  list-style: none;
+  // FOOTER LINK
+  .mini-ft-link {
+    text-decoration: none;
+    color: rgba(69, 141, 126, 1);
+    font-family: $Barlow;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.12857143580913544px;
+    text-align: center;
+    cursor: pointer;
+  }
+  // FOOTER LINK ACTIVE STATES
+  .mini-ft-link:hover, .mini-ft-link:focus {
+    color: $white;
+  }
+}
+
 /* ========================================================================= */
 /* 3. LAYOUT */
 /* HERO | LAYOUT */
@@ -319,20 +342,6 @@ body {
       justify-content: flex-start;
       list-style: none;
       margin-left: 67px;
-      // LINK CONTAINER
-      li {
-        .link {
-          text-decoration: none;
-          font-family: $Barlow;
-          font-size: 18px;
-          font-weight: 600;
-          color: $white;
-          line-height: 25px;
-          letter-spacing: -0.12857143580913544px;
-          text-align: left;
-          cursor: pointer;
-        }
-      }
       /* CONTACT BUTTON | LAYOUT */
       button {
         height: 56px;
@@ -341,8 +350,8 @@ body {
         border: none;
         padding: 16px 30px 15px 32px;
         background-color: $white;
-        cursor: pointer;
       }
+      // CONTACT BTN | ACTIVE STATE
       button:hover, button:focus {
         color: $white;
         background-color: rgba(255, 255, 255, 0.25);
@@ -382,7 +391,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
   height: auto;
-  width: 100%;
+  width: 1440px;
 }
 
 .one, .four {
@@ -490,13 +499,60 @@ body {
 
 /* SECTION | GRID : IMG-CONTAINER | LAYOUT */
 #img-grid {
-  background-color: yellow;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
   gap: 0;
   height: 447px;
+  width: 1440px;
+  margin-bottom: -3px;
+}
+
+/* FOOTER | LAYOUT */
+#footer {
+  @include reset;
   width: 100%;
+  background-color: rgba(144, 212, 198, 1);
+  @include flexboxC;
+  height: 350px;
+}
+
+.ft-container {
+  @include flexboxC;
+  height: 206px;
+  width: 300px;
+  margin: -15px 570px 72px 570px;
+}
+#logo2 {
+  width: 80%;
+  margin-top: 18px;
+  margin-bottom: 40px;
+  margin-left: 52px;
+}
+
+/* FOOTER NAVBAR | LAYOUT */
+#ft-navbar {
+  margin-top: -31px;
+  .ft-navbar{
+    width: 300px;
+    @include flexboxR;
+    justify-content: space-between;
+    margin-left: -36px;
+  }
+}
+
+/* FOOTER ICONS */
+#icon-container {
+  position: relative;
+  top: 65px;
+  display: flex;
+  flex-direction: row;justify-content: space-between;
+  width: 164px;
+  height: 20px;
+}
+.icon {
+  width: 20px;
+  height: 20px;
 }
 
 /* ========================================================================= */
@@ -584,6 +640,16 @@ body {
 #sugar-cubes {
   background-image: url('/images/desktop/image-gallery-sugarcubes.jpg');
 }
+
+/* FOOTER ICONS */
+.icon {
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+}
+  .icon:hover, .icon:active, .icon:focus {
+    filter: brightness(0) invert(1);
+  }
 
 
 /* ========================================================================= */
