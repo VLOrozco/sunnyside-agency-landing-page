@@ -116,6 +116,7 @@ body {
   display: block;
   position: absolute;
   top: 11px;
+  left: -10px;
   border-radius: 28px;
 }
 
@@ -128,6 +129,7 @@ body {
   display: block;
   position: absolute;
   top: 11px;
+  left: -10px;
 }
 
 .learnMore1, .learnMore2 {
@@ -520,6 +522,10 @@ body {
   margin-left: -36px;
 }
 
+.margin {
+  margin-left: -65px;
+}
+
 /* FOOTER ICONS */
 #icon-container {
   position: relative;
@@ -651,7 +657,7 @@ body {
 }
 
 /* ========================================================================= */
-/* 5. MEDIA QUERY | MOBILE VIEW 375px */
+/* 5. MEDIA QUERY | MOBILE VIEW at 375px */
 @media screen and (max-width: 900px) {
   #hero {
     background-image: url("/images/mobile/image-header.jpg");
