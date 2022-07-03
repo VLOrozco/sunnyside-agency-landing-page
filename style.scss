@@ -149,7 +149,7 @@ body {
 .navbar button {
   font-family: $Fraunces;
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 800;
   color: $vDarkDblue;
   line-height: 25px;
   letter-spacing: -0.1071428582072258px;
@@ -159,6 +159,7 @@ body {
 
 /* HERO | TYPOGRAPHY */
 .hero-title {
+  font-family: $Fraunces;
   @include heading1;
   color: $white;
   word-spacing: 5px;

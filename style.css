@@ -68,7 +68,7 @@ body {
 .navbar button {
   font-family: "Fraunces", serif;
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 800;
   color: rgb(35, 48, 62);
   line-height: 25px;
   letter-spacing: -0.1071428582px;
@@ -78,6 +78,7 @@ body {
 
 /* HERO | TYPOGRAPHY */
 .hero-title {
+  font-family: "Fraunces", serif;
   font-size: 56px;
   font-weight: 900;
   line-height: 69px;
