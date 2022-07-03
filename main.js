@@ -1,11 +1,13 @@
-// onclick
-// add menu-icon-fill
-// add navMenu.style.display = "block";
+function toggleMenu() {
+  const menuIcon = document.getElementById("menu-icon");
 
-// let navMenu = document.querySelector(".navMenu");
-// let isShow = true;
+  const navMenu = document.getElementById("navbar");
 
-// function toggleMenu() {
-//   isShow = !isShow;
-//   navMenu.classList.toggle("hide", isShow);
-// }
+  navMenu.style.display = "fixed";
+
+  menuIcon.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+}
+
+const hamburger = document.querySelector("button");
+
+hamburger.addEventListener("pointerdown", toggleMenu, false);
