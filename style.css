@@ -784,8 +784,11 @@ body {
     margin-left: 24px;
   }
   #logo-nav #navbar {
+    display: none;
     height: 56px;
     width: 375px;
+    margin-left: 20px;
+    margin-top: -30px;
   }
   #logo-nav #triangle {
     position: relative;
@@ -848,30 +851,27 @@ body {
 
   /* ======================= */
   /* NAV HAMBURGER MENU | LAYOUT */
-  #navigation-menu {
+  .navbar {
     display: none;
     pointer-events: auto;
   }
 
-  .hide {
-    display: none;
-  }
-
-  .show {
-    display: block;
-  }
-
   #menu-icon {
+    background-color: transparent;
+    border: none;
     display: block;
-    position: relative;
+    position: absolute;
     right: 25px;
-    top: 15px;
-    cursor: pointer;
+    top: 25px;
     transition: color ease-in 1s ease-out 1s;
   }
 
-  .fill {
-    fill: rgba(250, 250, 250, 0.5);
+  .line1, .line2, .line3 {
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    margin-right: 0;
+    background-color: rgb(255, 255, 255);
   }
 
   #hero-txt {
