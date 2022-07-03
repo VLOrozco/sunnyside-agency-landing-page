@@ -562,7 +562,7 @@ body {
 /* ========================================================================= */
 /* 4. IMAGES */
 #hero {
-  background-image: url('https://github.com/VLOrozco/sunnyside-agency-landing-page/blob/main/images/desktop/image-header.jpg');/* The image used */
+  background-image: url('./images/desktop/image-header.jpg');/* The image used */
   height: 800px;/* You must set a specified height */
   width: 100%; 
   background-position: center; /* Center the image */
@@ -677,30 +677,30 @@ body {
     background-size: cover;
   }
   .img-transform {
-    background-image: url('/images/mobile/image-transform.jpg');
+    background-image: url('./images/mobile/image-transform.jpg');
   }
   .img-stand-out {
-    background-image: url('/images/mobile/image-stand-out.jpg');
+    background-image: url('./images/mobile/image-stand-out.jpg');
   }
   .img-graphic-design {
-    background-image: url('/images/mobile/image-graphic-design.jpg');
+    background-image: url('./images/mobile/image-graphic-design.jpg');
   }
   .img-photography {
-    background-image: url('/images/mobile/image-photography.jpg');
+    background-image: url('./images/mobile/image-photography.jpg');
   }
 
   /* SECTION | GRID : IMG-CONTAINER | IMAGES */
   #milk {
-    background-image: url('/images/mobile/image-gallery-milkbottles.jpg');
+    background-image: url('./images/mobile/image-gallery-milkbottles.jpg');
   }
   #orange {
-    background-image: url('/images/mobile/image-gallery-orange.jpg');
+    background-image: url('./images/mobile/image-gallery-orange.jpg');
   }
   #ice-cream-cone {
-    background-image: url('/images/mobile/image-gallery-cone.jpg');
+    background-image: url('./images/mobile/image-gallery-cone.jpg');
   }
   #sugar-cubes {
-    background-image: url('/images/mobile/image-gallery-sugar-cubes.jpg');
+    background-image: url('./images/mobile/image-gallery-sugar-cubes.jpg');
   }
 
   /* TYPOGRAPHY | MEDIA QUERY */
