@@ -78,7 +78,7 @@ body {
 
 /* HERO | TYPOGRAPHY */
 .hero-title {
-  font-family: "Fraunces", serif;
+  font-family: "Fraunces", serif !important;
   font-size: 56px;
   font-weight: 900;
   line-height: 69px;
