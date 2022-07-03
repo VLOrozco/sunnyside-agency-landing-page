@@ -547,7 +547,7 @@ body {
 /* ========================================================================= */
 /* 4. IMAGES */
 #hero {
-  background-image: url("/images/desktop/image-header.jpg");
+  background-image: url("./images/desktop/image-header.jpg");
   /* The image used */
   height: 800px;
   /* You must set a specified height */
@@ -579,19 +579,19 @@ body {
 }
 
 .img-transform {
-  background-image: url("/images/desktop/image-transform.jpg");
+  background-image: url("./images/desktop/image-transform.jpg");
 }
 
 .img-stand-out {
-  background-image: url("/images/desktop/image-stand-out.jpg");
+  background-image: url("./images/desktop/image-stand-out.jpg");
 }
 
 .img-graphic-design {
-  background-image: url("/images/desktop/image-graphic-design.jpg");
+  background-image: url("./images/desktop/image-graphic-design.jpg");
 }
 
 .img-photography {
-  background-image: url("/images/desktop/image-photography.jpg");
+  background-image: url("./images/desktop/image-photography.jpg");
 }
 
 /* CLIENT TESTIMONIALS IMAGES */
@@ -611,15 +611,15 @@ body {
 }
 
 .photo1 {
-  background-image: url("/images/image-emily.jpg");
+  background-image: url("./images/image-emily.jpg");
 }
 
 .photo2 {
-  background-image: url("/images/image-thomas.jpg");
+  background-image: url("./images/image-thomas.jpg");
 }
 
 .photo3 {
-  background-image: url("/images/image-jennie.jpg");
+  background-image: url("./images/image-jennie.jpg");
 }
 
 /* SECTION | GRID : IMG-CONTAINER | IMAGES */
@@ -632,19 +632,19 @@ body {
 }
 
 #milk {
-  background-image: url("/images/desktop/image-gallery-milkbottles.jpg");
+  background-image: url("./images/desktop/image-gallery-milkbottles.jpg");
 }
 
 #orange {
-  background-image: url("/images/desktop/image-gallery-orange.jpg");
+  background-image: url("./images/desktop/image-gallery-orange.jpg");
 }
 
 #ice-cream-cone {
-  background-image: url("/images/desktop/image-gallery-cone.jpg");
+  background-image: url("./images/desktop/image-gallery-cone.jpg");
 }
 
 #sugar-cubes {
-  background-image: url("/images/desktop/image-gallery-sugarcubes.jpg");
+  background-image: url("./images/desktop/image-gallery-sugarcubes.jpg");
 }
 
 /* FOOTER ICONS */
@@ -667,7 +667,7 @@ body {
 
   /* IMAGES */
   #hero {
-    background-image: url("/images/mobile/image-header.jpg");
+    background-image: url("./images/mobile/image-header.jpg");
     height: 536px;
   }
 
@@ -680,7 +680,7 @@ body {
   }
 
   .img-transform {
-    background-image: url("/images/mobile/image-transform.jpg");
+    background-image: url("./images/mobile/image-transform.jpg");
   }
 
   .img-stand-out {
@@ -688,28 +688,28 @@ body {
   }
 
   .img-graphic-design {
-    background-image: url("/images/mobile/image-graphic-design.jpg");
+    background-image: url("./images/mobile/image-graphic-design.jpg");
   }
 
   .img-photography {
-    background-image: url("/images/mobile/image-photography.jpg");
+    background-image: url("./images/mobile/image-photography.jpg");
   }
 
   /* SECTION | GRID : IMG-CONTAINER | IMAGES */
   #milk {
-    background-image: url("/images/mobile/image-gallery-milkbottles.jpg");
+    background-image: url("./images/mobile/image-gallery-milkbottles.jpg");
   }
 
   #orange {
-    background-image: url("/images/mobile/image-gallery-orange.jpg");
+    background-image: url("./images/mobile/image-gallery-orange.jpg");
   }
 
   #ice-cream-cone {
-    background-image: url("/images/mobile/image-gallery-cone.jpg");
+    background-image: url("./images/mobile/image-gallery-cone.jpg");
   }
 
   #sugar-cubes {
-    background-image: url("/images/mobile/image-gallery-sugar-cubes.jpg");
+    background-image: url("./images/mobile/image-gallery-sugar-cubes.jpg");
   }
 
   /* TYPOGRAPHY | MEDIA QUERY */
