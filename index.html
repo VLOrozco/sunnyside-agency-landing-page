@@ -8,7 +8,7 @@
   
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 
@@ -22,19 +22,21 @@
 
     <!-- NAV + MENU HAMBURGER ICON -->
     <!-- ICON -->
-    <img id="menu-icon" src="/images/icon-hamburger.svg" alt="menu icon">
-    <div id="navigation-menu" class="navMenu hide">
-      <!-- NAVBAR -->
-      <nav id="navbar">
-        <div id="triangle"></div>
-        <ul class="navbar">
-          <li><a href="#products-grid" class="link link1">About</a></li>
-          <li><a href="#client-testimonials" class="link link2">Services</a></li>
-          <li><a href="#img-grid" class="link link3">Projects</a></li>
-          <button id="contact" href="#" class="link link4">CONTACT</button>
-        </ul>
-      </nav>
-    </div>
+    <button id="menu-icon" class="hamburger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </button>
+    <!-- NAVBAR -->
+    <nav id="navbar">
+      <div id="triangle"></div>
+      <ul class="navbar">
+        <li><a href="#products-grid" class="link link1">About</a></li>
+        <li><a href="#client-testimonials" class="link link2">Services</a></li>
+        <li><a href="#img-grid" class="link link3">Projects</a></li>
+        <button id="contact" href="#" class="link link4">CONTACT</button>
+      </ul>
+    </nav>
   </div>
   <div id="hero-txt">
     <h1 class="hero-title">WE ARE CREATIVES</h1>
@@ -145,6 +147,6 @@
     </div>
   </div>
 </footer>
-<script href="main.js"></script>
+<script href="/main.js"></script>
 </body>
 </html>
