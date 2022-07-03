@@ -4,15 +4,16 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-- [Screenshot](#screenshot)
-    - Mobile View
-    - Desktop View
-- [Links](#links)
-- [My process](#my-process)
-- [Built with](#built-with)
-- [Author](#author)
+- [Frontend Mentor - Sunnyside agency landing page solution](#frontend-mentor---sunnyside-agency-landing-page-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+  - [Screenshots](#screenshots)
+    - [Mobile View](#mobile-view)
+    - [Desktop View](#desktop-view)
+  - [Built with](#built-with)
+  - [Links](#links)
+  - [Author](#author)
 
 ---
 
@@ -29,10 +30,10 @@ Users should be able to:
 ## Screenshots
 
 ### Mobile View
-<img src="assets/mobileView.png" alt="Sunnyside Agency Landing Page in mobile view" width="50%"/>
+<img src="images/mobileView.png" alt="Sunnyside Agency Landing Page in mobile view" width="50%"/>
 
 ### Desktop View
-<img src="assets/desktopView.png" alt="Sunnyside Agency Landing Page in desktop view" width="100%"/>
+<img src="images/desktopView.png" alt="Sunnyside Agency Landing Page in desktop view" width="100%"/>
 
 ---
 ## Built with
