@@ -685,7 +685,7 @@ body {
   }
 
   .img-stand-out {
-    background-image: url("/images/mobile/image-stand-out.jpg");
+    background-image: url("./images/mobile/image-stand-out.jpg");
   }
 
   .img-graphic-design {
