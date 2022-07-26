@@ -78,7 +78,7 @@ body {
 
 /* HERO | TYPOGRAPHY */
 .hero-title {
-  font-family: "Fraunces", serif !important;
+  font-family: "Fraunces", serif;
   font-size: 56px;
   font-weight: 900;
   line-height: 69px;
@@ -548,17 +548,12 @@ body {
 /* ========================================================================= */
 /* 4. IMAGES */
 #hero {
-  background-image: url("./images/desktop/image-header.jpg");
-  /* The image used */
-  height: 800px;
-  /* You must set a specified height */
+  background-image: url("./images/desktop/image-header.jpg"); /* The image used */
+  height: 800px; /* You must set a specified height */
   width: 100%;
-  background-position: center;
-  /* Center the image */
-  background-repeat: no-repeat;
-  /* Do not repeat the image */
-  background-size: cover;
-  /* Resize the background image to cover the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 /* SECTION | GRID IMAGES */
@@ -665,13 +660,11 @@ body {
   body {
     overflow-x: hidden;
   }
-
   /* IMAGES */
   #hero {
     background-image: url("./images/mobile/image-header.jpg");
     height: 536px;
   }
-
   /* SECTION | GRID IMAGES */
   #img3, #img4 {
     height: 600px;
@@ -679,40 +672,31 @@ body {
     background-position: top center;
     background-size: cover;
   }
-
   .img-transform {
     background-image: url("./images/mobile/image-transform.jpg");
   }
-
   .img-stand-out {
     background-image: url("./images/mobile/image-stand-out.jpg");
   }
-
   .img-graphic-design {
     background-image: url("./images/mobile/image-graphic-design.jpg");
   }
-
   .img-photography {
     background-image: url("./images/mobile/image-photography.jpg");
   }
-
   /* SECTION | GRID : IMG-CONTAINER | IMAGES */
   #milk {
     background-image: url("./images/mobile/image-gallery-milkbottles.jpg");
   }
-
   #orange {
     background-image: url("./images/mobile/image-gallery-orange.jpg");
   }
-
   #ice-cream-cone {
     background-image: url("./images/mobile/image-gallery-cone.jpg");
   }
-
   #sugar-cubes {
     background-image: url("./images/mobile/image-gallery-sugar-cubes.jpg");
   }
-
   /* TYPOGRAPHY | MEDIA QUERY */
   /* NAV LINKS | TYPOGRAPHY */
   .link {
@@ -723,12 +707,10 @@ body {
     text-align: center;
     letter-spacing: -0.14px;
   }
-
   /* CONTACT BUTTON | TYPOGRAPHY */
   .navbar button {
     letter-spacing: -0.11px;
   }
-
   /* HERO | TYPOGRAPHY */
   .hero-title {
     font-size: 40px;
@@ -736,7 +718,6 @@ body {
     letter-spacing: 6.25px;
     text-align: center;
   }
-
   /* SECTION | GRID | TYPOGRAPHY */
   .product-title {
     color: rgb(35, 48, 62);
@@ -746,22 +727,18 @@ body {
     letter-spacing: -0.2285714298px;
     text-align: center;
   }
-
   /* "LEARN MORE" LINK + ::AFTER PSEUDO CLASS ATTRIBUTES */
   #product-link1::after {
     top: 11px;
     left: -10px;
   }
-
   #product-link2::after {
     top: 11px;
     left: -10px;
   }
-
   .learnMore1, .learnMore2 {
     text-align: center;
   }
-
   /* SECTION | CLIENT TESTIMONIALS | TYPOGRAPHY */
   .testimonials-title {
     font-size: 16px;
@@ -770,7 +747,6 @@ body {
     letter-spacing: 4px;
     text-align: center;
   }
-
   /* LAYOUT | MEDIA QUERY */
   /* HERO | LAYOUT */
   #logo-nav {
@@ -788,11 +764,12 @@ body {
     display: none;
     height: 56px;
     width: 375px;
-    margin-left: 20px;
-    margin-top: -30px;
+    margin-left: 1em;
+    margin-top: 1em;
   }
   #logo-nav #triangle {
-    position: relative;
+    display: none;
+    position: absolute;
     top: 63px;
     right: -156px;
     width: 0;
@@ -808,12 +785,13 @@ body {
     align-items: center;
     background-color: rgb(255, 255, 255);
     position: relative;
-    left: -173px;
-    top: 213px;
+    left: -149px;
+    top: 35px;
     height: 305px;
     width: 329px;
     margin-left: 0;
     margin-top: 28px;
+    transition: color ease-in 1s ease-out 1s;
     /* CONTACT BUTTON | LAYOUT */
   }
   #logo-nav .navbar li {
@@ -849,14 +827,8 @@ body {
     background-color: rgb(254, 120, 103);
     z-index: 4;
   }
-
   /* ======================= */
   /* NAV HAMBURGER MENU | LAYOUT */
-  .navbar {
-    display: none;
-    pointer-events: auto;
-  }
-
   #menu-icon {
     background-color: transparent;
     border: none;
@@ -864,9 +836,8 @@ body {
     position: absolute;
     right: 25px;
     top: 25px;
-    transition: color ease-in 1s ease-out 1s;
+    cursor: pointer;
   }
-
   .line1, .line2, .line3 {
     width: 30px;
     height: 3px;
@@ -874,26 +845,22 @@ body {
     margin-right: 0;
     background-color: rgb(255, 255, 255);
   }
-
   #hero-txt {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
   .hero-title {
     margin-left: 9px;
     margin-top: 88px;
     margin-bottom: 95px;
   }
-
   #down-arrow {
     position: relative;
     top: -47px;
     z-index: 1;
   }
-
   /* SECTION | GRID | LAYOUT */
   #products-grid {
     display: grid;
@@ -903,31 +870,24 @@ body {
     width: 100vw;
     grid-template-areas: "one" "two" "three" "four" "five" "six";
   }
-
   .one {
     grid-area: two;
   }
-
   .two {
     grid-area: one;
   }
-
   .three {
     grid-area: three;
   }
-
   .four {
     grid-area: four;
   }
-
   .five {
     grid-area: five;
   }
-
   .six {
     grid-area: six;
   }
-
   .one, .four {
     margin: 0;
     padding: 0;
@@ -938,13 +898,11 @@ body {
     height: 437px;
     width: 375px;
   }
-
   #transform1, #stand-out1 {
     height: 320px;
     width: 327px;
     margin: -14px 24px 64px 24px;
   }
-
   .product-title {
     font-family: "Fraunces", serif;
     font-size: 32px;
@@ -957,17 +915,14 @@ body {
     margin-top: 2px;
     margin-bottom: 5px;
   }
-
   .product-description {
     height: 150px;
     width: 327px;
     text-align: center;
   }
-
   #product-link1 {
     margin-top: 0;
   }
-
   #product-link1::after {
     content: "";
     background: rgba(250, 212, 0, 0.25);
@@ -976,7 +931,6 @@ body {
     top: 14px;
     left: -2px;
   }
-
   #product-link2::after {
     background: rgba(254, 120, 103, 0.25);
     height: 10px;
@@ -984,18 +938,15 @@ body {
     top: 12px;
     left: -10px;
   }
-
   .img-transform, .img-stand-out {
     height: 312px !important;
     margin: 0;
     padding: 0;
   }
-
   .img-stand-out {
     background-position: top center;
     background-size: cover;
   }
-
   .graphic-design-txt,
 .photography-txt {
     width: 327px;
@@ -1009,7 +960,6 @@ body {
 .photography-txt .product-description2 {
     margin-bottom: 0;
   }
-
   /* SECTION | CLIENT TESTIMONIALS | LAYOUT */
   #client-testimonials {
     width: 375px;
@@ -1017,7 +967,6 @@ body {
     margin: 0;
     padding: 0;
   }
-
   #testimonials-container {
     height: 1200px;
     width: 327px;
@@ -1025,7 +974,6 @@ body {
     padding: 0;
     margin-top: -35px;
   }
-
   .testimonials-title {
     height: 20px;
     width: 279px;
@@ -1033,38 +981,31 @@ body {
     margin-bottom: 58px;
     margin-left: 0;
   }
-
   #client-cards {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
   .client-card {
     height: 288px;
     width: 327px;
   }
-
   .client-card:nth-child(2) {
     margin: 64px 0;
   }
-
   .testimony {
     width: 327px;
     margin-top: -32px;
     margin-left: 0;
   }
-
   .client-info {
     margin-top: 25px;
     margin-left: 64px;
   }
-
   .client-position {
     margin-top: 8px;
   }
-
   /* SECTION | GRID : IMG-CONTAINER | LAYOUT */
   #img-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1073,7 +1014,6 @@ body {
     width: 375px;
     margin-top: 86px;
   }
-
   /* FOOTER | LAYOUT */
   .ft-container {
     margin: 0;
@@ -1085,14 +1025,12 @@ body {
     width: 297px;
     margin-top: -33px;
   }
-
   #logo2 {
     width: 80%;
     margin-top: -60px;
     margin-bottom: 37px;
     margin-left: 52px;
   }
-
   /* FOOTER NAVBAR | LAYOUT */
   #ft-navbar {
     margin-top: -39px;
@@ -1106,11 +1044,9 @@ body {
     justify-content: space-between;
     margin-left: -36px;
   }
-
   .margin {
     margin-left: -65px;
   }
-
   /* FOOTER ICONS */
   #icon-container {
     position: relative;
@@ -1121,7 +1057,6 @@ body {
     width: 164px;
     height: 20px;
   }
-
   .icon {
     width: 20px;
     height: 20px;

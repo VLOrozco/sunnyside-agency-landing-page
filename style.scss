@@ -777,12 +777,13 @@ body {
     display: none;
     height: 56px;
     width: 375px;
-    margin-left: 20px;
-    margin-top: -30px;
+    margin-left: 1em;
+    margin-top: 1em;
   }
 
   #triangle {
-      position: relative;
+      display: none;
+      position: absolute;
       top: 63px;
       right: -156px;
       width: 0;
@@ -795,12 +796,13 @@ body {
     @include flexboxC;
     background-color: $white;
     position: relative;
-    left: -173px;
-    top: 213px;
+    left: -149px;
+    top: 35px;
     height: 305px;
     width: 329px;
     margin-left: 0;
     margin-top: 28px;
+    transition: color ease-in 1s ease-out 1s;
     li {
       width: 100%;
       display: flex;
@@ -823,6 +825,7 @@ body {
         margin-bottom: 12px;
       }
     }
+
     /* CONTACT BUTTON | LAYOUT */
     button {
       background-color: $yellow;
@@ -839,11 +842,6 @@ body {
 }
 /* ======================= */
   /* NAV HAMBURGER MENU | LAYOUT */
-  .navbar {
-    display: none;
-    pointer-events: auto;
-  }
-
   #menu-icon {
     background-color: transparent;
     border: none;
@@ -851,7 +849,7 @@ body {
     position: absolute;
     right: 25px;
     top: 25px;
-    transition: color ease-in 1s ease-out 1s;
+    cursor: pointer;
   }
   .line1, .line2, .line3 {
     width: 30px;
