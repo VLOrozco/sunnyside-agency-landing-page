@@ -1,13 +1,15 @@
-function toggleMenu() {
-  const menuIcon = document.getElementById("menu-icon");
+const menuIcon = document.getElementById("menu-icon");
 
-  const navMenu = document.getElementById("navbar");
+menuIcon.addEventListener('click', function toggleMenu() {
+  const navbar = document.getElementById('navbar');
+  const triangle = document.getElementById('triangle');
 
-  navMenu.style.display = "fixed";
+  if (navbar.style.display === "none") {
+    navbar.style.display = "block";
+    triangle.style.display = "block";
+  } else {
+    navbar.style.display = "none";
+    triangle.style.display = "block";
+  }
 
-  menuIcon.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-}
-
-const hamburger = document.querySelector("button");
-
-hamburger.addEventListener("pointerdown", toggleMenu, false);
+});
