@@ -9,7 +9,7 @@ menuIcon.addEventListener('click', function toggleMenu() {
     triangle.style.display = "block";
   } else {
     navbar.style.display = "none";
-    triangle.style.display = "block";
+    triangle.style.display = "none";
   }
 
 });
